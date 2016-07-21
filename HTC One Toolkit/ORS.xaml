@@ -1,0 +1,38 @@
+﻿<Window x:Class="HTC_One_Toolkit.ORS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Open Recovery Script" Height="407" Width="343" Icon="/HTC%20One%20Toolkit;component/icon.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <GroupBox Header="Flash a ZIP in Recovery" Height="156" HorizontalAlignment="Left" Margin="8,7,0,0" Name="groupBox2" VerticalAlignment="Top" Width="310">
+            <Grid>
+                <Button Content="Browse" Height="23" HorizontalAlignment="Left" Margin="6,6,0,0" Name="btnBrowseFile" VerticalAlignment="Top" Width="104" Click="btnBrowseFile_Click" />
+                <GroupBox Header="Wipe Partition" Height="93" HorizontalAlignment="Left" Margin="6,34,0,0" Name="groupBox1" VerticalAlignment="Top" Width="110">
+                    <Grid>
+                        <CheckBox Content="Wipe Data" HorizontalAlignment="Left" Margin="6,6,0,0" Name="cbWipeData" IsChecked="True" Height="16" VerticalAlignment="Top" />
+                        <CheckBox Content="Wipe Cache" Height="16" HorizontalAlignment="Left" Margin="6,28,0,0" Name="cbWipeCache" VerticalAlignment="Top" IsChecked="True" />
+                        <CheckBox Content="Wipe Dalvik" Height="16" HorizontalAlignment="Left" Margin="6,50,0,0" Name="cbWipeDalvik" VerticalAlignment="Top" IsChecked="True" />
+                    </Grid>
+                </GroupBox>
+                <Button Content="Go" Height="23" HorizontalAlignment="Left" Margin="123,98,0,0" Name="btnORSGo" VerticalAlignment="Top" Width="169" Click="btnORSGo_Click" />
+                <TextBlock Height="86" HorizontalAlignment="Left" Margin="123,6,0,0" Name="tbFlashPath" Text="No File Selected" VerticalAlignment="Top" Width="169" TextWrapping="WrapWithOverflow" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Make Nandroid" Height="192" HorizontalAlignment="Left" Margin="8,169,0,0" Name="groupBox3" VerticalAlignment="Top" Width="310">
+            <Grid>
+                <CheckBox Content="Boot" Height="16" HorizontalAlignment="Left" Margin="12,6,0,0" Name="cbBackupBoot" VerticalAlignment="Top" IsChecked="True" />
+                <CheckBox Content="Cache" Height="16" HorizontalAlignment="Left" Margin="12,28,0,0" Name="cbBackupCache" VerticalAlignment="Top" IsChecked="True" />
+                <CheckBox Content="Data" Height="16" HorizontalAlignment="Left" Margin="12,50,0,0" Name="cbBackupData" VerticalAlignment="Top" IsChecked="True" />
+                <CheckBox Content="SD Ext" Height="16" HorizontalAlignment="Left" Margin="12,72,0,0" Name="cbBackupSdExt" VerticalAlignment="Top" />
+                <CheckBox Content="Compress Backup" Height="16" HorizontalAlignment="Left" Margin="123,116,0,0" Name="cbBackupCompress" VerticalAlignment="Top" />
+                <CheckBox Content="System" Height="16" HorizontalAlignment="Left" Margin="12,116,0,0" Name="cbBackupSystem" VerticalAlignment="Top" IsChecked="True" />
+                <CheckBox Content="Recovery" Height="16" HorizontalAlignment="Left" Margin="12,94,0,0" Name="cbBackupRecovery" VerticalAlignment="Top" />
+                <CheckBox Content="No MD5# sum generation" Height="16" HorizontalAlignment="Left" Margin="123,94,0,0" Name="cbBackupNoMd5" VerticalAlignment="Top" />
+                <CheckBox Content="Special 3" Height="16" HorizontalAlignment="Left" Margin="123,54,0,0" Name="cbBackupSp3" VerticalAlignment="Top" />
+                <CheckBox Content="Special 2" Height="16" HorizontalAlignment="Left" Margin="123,32,0,0" Name="cbBackupSp2" VerticalAlignment="Top" />
+                <CheckBox Content="Special 1" Height="16" HorizontalAlignment="Left" Margin="123,10,0,0" Name="cbBackupSp1" VerticalAlignment="Top" />
+                <Rectangle Height="2" HorizontalAlignment="Left" Margin="123,80,0,0" Name="rectangle1" Stroke="DimGray" VerticalAlignment="Top" Width="169" />
+                <Button Content="Backup" Height="23" HorizontalAlignment="Left" Margin="12,140,0,0" Name="btnNandroidGo" VerticalAlignment="Top" Width="280" Click="btnNandroidGo_Click" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

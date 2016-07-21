@@ -1,0 +1,38 @@
+﻿<Window x:Class="HTC_One_Toolkit.ScottyAdbCmds"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Scotty1223's ADB Command Section" Height="327.008" Width="475.575" Icon="scotty.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock Height="40" HorizontalAlignment="Left" Margin="12,12,0,0" Name="textBlock1" Text="Many thanks to @Scotty1223 and @S-trace for their work on these commands. I take NO credit for these since I only put them in. :)" VerticalAlignment="Top" Width="445" TextWrapping="WrapWithOverflow" />
+        <TabControl Height="228" HorizontalAlignment="Left" Margin="12,58,0,0" Name="tabControl1" VerticalAlignment="Top" Width="435" >
+            <TabItem Header="Change MID" Name="tabItem1">
+                <Grid>
+                    <GroupBox Header="MIDs" Height="185" HorizontalAlignment="Left" Margin="6,6,0,0" Name="groupBox1" VerticalAlignment="Top" Width="218">
+                        <Grid>
+                            <ListBox Height="150" HorizontalAlignment="Left" Margin="6,6,0,0" Name="lbMidList" VerticalAlignment="Top" Width="192">
+                                <ListBoxItem Content="AT&amp;T, Unlocked &amp; Developer" />
+                                <ListBoxItem Content="Google Play Edition" />
+                                <ListBoxItem Content="T-Mobile" />
+                                <ListBoxItem Content="HTC Europe" />
+                                <ListBoxItem Content="Rogers" />
+                                <ListBoxItem Content="Wind (Canada)" />
+                                <ListBoxItem Content="0P6B11000" />
+                            </ListBox>
+                        </Grid>
+                    </GroupBox>
+                    <Button Content="Go" Height="37" HorizontalAlignment="Left" Margin="268,82,0,0" Name="btnMidGo" VerticalAlignment="Top" Width="119" Click="btnMidGo_Click" />
+                    <Button Content="MID Thread" Height="23" HorizontalAlignment="Left" Margin="268,129,0,0" Name="btnMidThread" VerticalAlignment="Top" Width="119" Click="btnMidThread_Click" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Remove Tampered">
+                <Button Content="Remove Tampered Banner" Height="56" Name="btnRmvTampered" Width="270" Click="btnRmvTampered_Click" />
+            </TabItem>
+            <TabItem Header="Bootloader Status Flags">
+                <Grid Height="190" Name="grid1" Width="424">
+                    <Button Content="Lock" Height="34" HorizontalAlignment="Left" Margin="88,39,0,0" Name="btnLock" VerticalAlignment="Top" Width="254" Click="btnLock_Click" />
+                    <Button Content="(Untested) Unlocked" Height="52" HorizontalAlignment="Left" Margin="88,99,0,0" Name="btnUnlocked" VerticalAlignment="Top" Width="254" Click="btnUnlocked_Click" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

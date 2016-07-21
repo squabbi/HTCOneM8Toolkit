@@ -1,0 +1,16 @@
+﻿<Window x:Class="HTC_One_Toolkit.CidDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Output" Height="410" Width="300" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Topmost="True" ShowInTaskbar="False" WindowStyle="ToolWindow" Icon="terminal.ico">
+    <Grid>
+        <RichTextBox x:Name="TokenOutput" IsReadOnly="True" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0,0,0,0"/>
+                </Style>
+            </RichTextBox.Resources>
+            <FlowDocument>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>
