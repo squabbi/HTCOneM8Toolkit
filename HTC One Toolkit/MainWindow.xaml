@@ -57,10 +57,10 @@
                 <ProgressBar Height="10" HorizontalAlignment="Left" Name="progressBar1" VerticalAlignment="Top" Width="217" Margin="6,69,0,0" />
             </Grid>
         </GroupBox>
-        <GroupBox Header="Updates" Height="85" HorizontalAlignment="Left" Margin="12,12,0,0" Name="groupBox3" VerticalAlignment="Top" Width="241">
+        <GroupBox Header="Updates" Height="85" HorizontalAlignment="Left" Margin="12,12,0,0" Name="groupBox3" VerticalAlignment="Top" Width="241" IsEnabled="False" Opacity="0.5">
             <Grid>
                 <MenuItem Header="Check For Updates..." x:Name="mnuCheckForUpdates" Margin="6,6,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="217" Focusable="False" />
-                <my:AutomaticUpdater x:Name="autoUpdater1" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="16" Margin="20,36,0,0" DaysBetweenChecks="1" WaitBeforeCheckSecs="5" />
+                <!-- <my:AutomaticUpdater x:Name="autoUpdater1" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="16" Margin="20,36,0,0" DaysBetweenChecks="1" WaitBeforeCheckSecs="5" /> -->
             </Grid>
         </GroupBox>
         <GroupBox Header="Unlock Bootloader" Height="88" HorizontalAlignment="Left" Margin="12,347,0,0" Name="groupBox4" VerticalAlignment="Top" Width="241">

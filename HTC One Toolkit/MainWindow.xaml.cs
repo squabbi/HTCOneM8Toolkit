@@ -1,28 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Collections.ObjectModel;
-using System.Windows.Navigation;
-using System.Globalization;
 using System.Net;
-using System.Xml;
-using System.Reflection;
 
 using TaskDialogInterop;
-using wyUpdate;
+//using wyUpdate;
 //using AutoUpdaterDotNET;
 
 using AndroidCtrl;
@@ -34,17 +19,17 @@ using AndroidCtrl.Tools;
 
 namespace HTC_One_Toolkit
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    /// 
-    public partial class MainWindow : Window
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	/// 
+	public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
 
-            autoUpdater1.MenuItem = mnuCheckForUpdates;
+            //autoUpdater1.MenuItem = mnuCheckForUpdates;
         }
 
         //Path of current directory
